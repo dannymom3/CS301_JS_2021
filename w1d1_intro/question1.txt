@@ -1,0 +1,3 @@
+program and algorithm - both are uses data and instructions, but algorithm is 
+a sequence of instructions of the given data and program is composed of both 
+data and instructions.
