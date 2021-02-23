@@ -1,0 +1,26 @@
+Q4. Write at least two algorithms you perform on your daily life, with at least
+ one algorithm that can be convertedto computer program
+ ANSWER: ==> algorithm -- in order to go to class:
+ 1. getup in the morning 2. take a shower or washing hands and face 3. get reeady the materials
+ like computer and other learning materials 4. walk / or drive to class
+
+ ==> algorithm to get the net pay from the regular wage amount working with 
+ regular hours
+ 1. enter a regular hours
+ 2. enter a regular wage amount 
+ 3. get the regular pay by multiplying regular hour with regular wage
+ 4. get the tax amount by multiplying the tax percentage with regular pay
+ 5. get the net pay by subtructing the tax amount from regular pay
+
+
+ ==> the above set of instructions of the algorithms aree looks like the following
+ 
+const prompt = require("prompt-sync")();
+let regHours = prompt("Enter the regular hours: ");
+let regWage = prompt("Enter the regular wage amount: ");
+let regPay = (regHours * regWage);
+let tax = (regPay * 0.15);
+let netPay = regPay - tax;
+
+console.log(netPay);
+

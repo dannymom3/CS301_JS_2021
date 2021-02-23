@@ -1,3 +1,5 @@
+Q1. How is a computer program similar/ different than an algorithm
+ANSWER:
 program and algorithm - both are uses data and instructions, but algorithm is 
-a sequence of instructions of the given data and program is composed of both 
-data and instructions.
+a sequence of instructions of the given data or a systematic approach to solve a problem
+and program is composed of both data and instructions.

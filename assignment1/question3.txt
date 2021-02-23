@@ -1,2 +1,2 @@
-What happened when an assignment is performed without using let or const keywords in strict mode?
+Q3. What happened when an assignment is performed without using let or const keywords in strict mode?
 ANSWER: error will be happened or our code won't be excuted.
