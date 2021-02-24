@@ -1,0 +1,54 @@
+----------------------------------------------------------------------
+Question 1
+----------------------------------------------------------------------
+console.log(Number(null));
+answer: null
+
+console.log(Number(undefined));
+answer: undefined
+
+console.log(Boolean("0"));
+answer: true
+
+console.log(Boolean(" "));
+answer: true
+
+----------------------------------------------------------------------
+Question 2. What will be the output of running following code?
+let a = b = 2;
+let c = 3 - (a + b + 1);
+console.log(a--); // 2
+console.log(++c); // -1
+console.log(a); // 1
+console.log(c); // -1
+----------------------------------------------------------------------
+
+Question 3. What is the significance of + operator before prompt function in following code?
+
+  let a = +prompt("Firstnumber?");
+  answer: to change the default string user input in to number 
+----------------------------------------------------------------------
+Question 4. What is the use of !! and ?? operators in JavaScript? Explain with anexample of each. 
+           answer: ?? - used to return the first argument if it is not null otherwise, returns the 
+                        the next values
+                      - returns the first defined value
+                        Example: let a = null, b = 5;
+                                 a 
+                                 returns 5, because the first argument is null
+
+                                 let height = 7;
+                                 alert(height ?? 100); // 7
+
+----------------------------------------------------------------------
+Question 5. Which of the following statementsis true?
+       a.In computer programming, a statement can be part of an expression.
+       b.In computer programming, an expression can be a part of a statement.
+       answer: b
+
+       ==> expression - evaluates some values
+                      -  a part of statement 
+                     Example, "hello, world", 3 + 3, a * 5 > b...
+
+      ==> statement - is never part of expression
+                    - performs an action
+                    Example, print("hello, world"), sleep(1000)...
