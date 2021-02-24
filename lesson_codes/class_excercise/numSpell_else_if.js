@@ -21,4 +21,4 @@ if (userInput === 5) {
     spellNum = "Five";
 }
 console.log(`${userInput} is spell like ${spellNum}`);
-//console.log();
+console.log();
