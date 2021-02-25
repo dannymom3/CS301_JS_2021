@@ -1,0 +1,29 @@
+Q1.What happens when you forget a break while using switch statement?
+  answer: The program without break continous to the next labeled statement, executing the statement 
+          until a break or the end of the statement is reached.
+
+Q2. What will be the output of running following code?
+     var foo = 0;
+       switch(foo){
+           case-1:
+             console.log('negative1');
+             break;
+          case0:
+             console.log(0);
+           case1:
+             console.log(1);
+             break;
+           case2:
+           console.log(2);
+             break;
+           default:
+             console.log('default');
+        }
+        answer: since, in case 0, we don't have a break so that it keeps to excute our code 
+                until it reached to the next break statement. Therefore, case 0 and case 1
+                will be executed because there is a break on case 1.
+                The outputs are 0 and 1 (0 on case 0 and 1 on case 1).
+
+Q3. Will output change if value of foo is a ‘0’ (0 in quotes) instead?
+    answer: Yes!, because 0 in the quotes means we changed in to string. Therefore, the values will be 
+          changed and will execute the default value or any string value if we have that in our cases.
