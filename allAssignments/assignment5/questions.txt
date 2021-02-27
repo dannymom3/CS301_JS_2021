@@ -1,0 +1,20 @@
+
+
+Q1. What are alternatives to default parameters?
+
+    answer: Default parameters allow named parameters to be initialized with default
+            values if no value or undefined is passed.
+            If a parameter is not provided, then its value becomes undefined
+            If we want to use a “default” value instead, then we can specify it after =
+            Example: function multiply(a, b = 1){
+                return a * b;
+            }
+            console.log(multiply(5, 2)); //expected answer -- 10
+            console.log(multiply(5)); //expected answer -- 5
+
+
+Q2. What are things you should consider while naming a function?
+    answer: choose a word with meaning
+            Avoid generic names
+            Don't make your name too long or too short
+            Use consistent formatting
