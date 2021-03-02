@@ -1,0 +1,36 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="uft-8">
+    <title> Mailing address </title>
+    <script>
+        "us strict"
+        function address() {
+            let name = document.getElementById("inputName").value;
+            let street = document.getElementById("inputStreet").value;
+            let city = document.getElementById("inputCity").value;
+            let state = document.getElementById("inputState").value;
+            let zipCode = document.getElementById("inputZip").value;
+
+            let fullAdress = `${name} <br> ${street} <br> ${city}, ${state} ${zipCode}`
+
+            document.getElementById("outputDiv").innerHTML = fullAdress
+        }
+    </script>
+</head>
+
+<body>
+
+    Name <input type="text" id="inputName" size="20"><br>
+    Street <input type="text" id="inputStreet" size="20"><br>
+
+    City <input type="text" id="inputCity" size="12">
+    State <input type="text" id="inputState" size="6">
+    Zip Code <input type="text" id="inputZip" size="9"><br>
+
+    <button type="button" onclick="address()">Make Adress</button>
+    <div id="outputDiv"></div>
+
+</body>
+
+</html>

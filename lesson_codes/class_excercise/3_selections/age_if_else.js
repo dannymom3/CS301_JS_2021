@@ -19,7 +19,7 @@ if (age <= 0) {
 //Mehod 2 - using if..else
 
 if (age <= 0) {
-    console.log("nter a valid age ");
+    console.log("enter a valid age ");
 } else if (age <= 14) {
     console.log("you can not drive");
 } else if (age <= 18) {

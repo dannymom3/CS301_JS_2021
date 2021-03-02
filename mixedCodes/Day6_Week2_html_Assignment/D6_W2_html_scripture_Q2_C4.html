@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="uft-8">
+    <title> Applied scripture </title>
+    <script>
+        "us strict"
+        function applyScripture() {
+            let name = document.getElementById("InputName").value;
+
+            let scripture = "I " + name + ", originaly came from \"Ethiopia\"." +
+                " I have been in US for five years." +
+                " Right now i am studying my masters degree in software development " +
+                "at Maharish International University."
+            document.getElementById("outputDiv").innerHTML = scripture;
+        }
+    </script>
+</head>
+
+<body>
+    Please enter your name:
+    <input type="text" id="InputName" size="20">
+    <button type="button" onclick="applyScripture()">Verse</button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>

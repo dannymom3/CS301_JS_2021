@@ -29,4 +29,5 @@ if (house_cost < 0) {
     downPayment = (5000 + (0.1 * (house_cost - 200000)));
 }
 
+console.log(down_pay);
 console.log(`The down payment for the house is ${downPayment}, and cost of house is ${house_cost}`)

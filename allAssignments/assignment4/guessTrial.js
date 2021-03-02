@@ -13,7 +13,7 @@ let myPin = 1122;
 let trial = 3;
 let i = 1;
 
-while (i <= 3) {
+while (i <= trial) {
     if (inputPin === myPin) {
         console.log("Correct, welcome back!")
         break;

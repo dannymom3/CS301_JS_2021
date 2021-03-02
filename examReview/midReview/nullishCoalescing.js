@@ -1,0 +1,12 @@
+"use strict";
+let height = null;
+let width = null;
+//let area = (height && 100) * (width ?? 50);
+let num;
+// let x = (1 && 2) ?? 3;
+console.log(height || 100);
+console.log(num || 100);
+// console.log(num ?? 100);
+// console.log(num ?? num);
+console.log(x);
+console.log(area);

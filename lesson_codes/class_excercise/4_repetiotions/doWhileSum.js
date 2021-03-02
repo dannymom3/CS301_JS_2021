@@ -9,7 +9,7 @@ const prompt = require("prompt-sync")();
 
 let sum = 0;
 //let inputNum = parseInt(prompt("Enter a number: "));
-let inputNum = 0;
+let inputNum;
 do {
     //add all positive numbers
     sum += inputNum;

@@ -13,7 +13,7 @@ let extra = numOfStudents % numberOfTeams;
 
 //let teamWithExtraStudents = extra;
 
-let teamWithStandardNumStudents = numberOfTeams - extra;
+let defaultSize = numberOfTeams - extra;
 
 if (extra === 0) {
     console.log(`${numberOfTeams} teams of ${defaultSize}`);

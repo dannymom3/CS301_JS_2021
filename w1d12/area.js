@@ -6,6 +6,6 @@ console.log(area);
 
 
 let y = null;
-let z = 0;
+let z = undefined;
 console.log(typeof y);
 console.log(typeof z)
