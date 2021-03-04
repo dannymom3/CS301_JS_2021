@@ -6,11 +6,15 @@
  *       calls the function checkPrime to see if the entered number is a prime number or not.
  */
 
-const prompt = require("prompt-sync")();
+//const prompt = require("prompt-sync")();
 
-let userInput = +prompt("Enter an integer number");
-
-function is_Prime(userNum) {
+//let userNum = +prompt("Enter an integer number");
+/**
+ * 
+ * @param {number} userNum a number to input the user to check the primr or not
+ * @return {boolean} returns true or false 
+ */
+function isPrime(userNum) {
 
     if (userNum === 1) {
 
@@ -20,11 +24,12 @@ function is_Prime(userNum) {
         for (let i = 2; i < userNum; i++) {
             if (userNum % i === 0) {
                 return false;
-                break;
+
             }
         }
 
         return true;
     }
 }
-console.log(is_Prime(userInput));
+//console.log(isPrime(userInput));
+module.exports = { isPrime };

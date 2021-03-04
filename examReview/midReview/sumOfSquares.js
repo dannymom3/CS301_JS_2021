@@ -1,5 +1,8 @@
 "use strict";
-
+/**
+ * 
+ * @param {param} n is an integer
+ */
 function sumOfSquares(n) {
 
     let result = 0;

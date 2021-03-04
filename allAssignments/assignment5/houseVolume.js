@@ -1,46 +1,72 @@
 "use strict";
-// This function takes three parameters, which are 
-// three sides of a triangle and returns
-// the computed area
-const prompt = require('prompt-sync')();
+/**
+ *  This function takes three parameters, which are 
+ * three sides of a triangle and returns
+ * the computed area
+ */
 
+const prompt = require("prompt-sync")();
+/**
+ * 
+ * @param {number} side1 side one of the triangle 
+ * @param {number} side2 second side of the triangle 
+ * @param {number} side3 third side of the triangle
+ * @return {number} returns area of triangle 
+ */
 function triangleArea(side1, side2, side3) {
 
-    let s = (side1 + side2 + side3) / 2; //Formula to get the semi-perimeter of the triangle
-    let area_Of_Triangle = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+    let semiCircum = (side1 + side2 + side3) / 2; //Formula to get the semi-perimeter of the triangle
+    let areaOfTriangle = Math.sqrt(semiCircum * (semiCircum - side1) * (semiCircum - side2) * (semiCircum - side3));
 
-    return area_Of_Triangle;
+    return areaOfTriangle;
 }
 
-// This function takes three parameters height, width and depth
-// and returns computed volume for a rectangular prism.
-function living_Volume(height, width, depth) {
+/**
+ * 
+ * @param {number} height the height of the house
+ * @param {number} width the width of the house 
+ * @param {number} depth the depth of the house 
+ * @return {number} returns the volume of the house
+ */
+function livingVolume(height, width, depth) {
     return height * width * depth;
 }
 
-// Function roofVolume, takes three parameters depth, sweep, width
-// and with and returns volume of the triangle multiplied with width.
+/**
+ * 
+ * @param {number} depth depth of the roof 
+ * @param {number} sweep the sweep of the roof 
+ * @param {number} width the width of the roof
+ * @return {number} returns the roof volume of the house 
+ */
 function roofVolume(depth, sweep, width) {
     return triangleArea(depth, sweep, sweep) * width;
 }
-//Function house_Volume takes four parameters: height, width, depth and sweep; returns total volume 
-// i.e. volume of living_volume plus roof_volume.
-function house_Volume(height, width, depth, sweep) {
-    let totalVolume = living_Volume(height, width, depth) + roofVolume(depth, sweep, width);
+/**
+ * 
+ * @param {number} height the height of the house
+ * @param {number} width the width of the house 
+ * @param {number} depth the depth of the house 
+ * @param {number} sweep of the house roof
+ * @return {number} returns the total volume of the house 
+ */
+function houseVolume(height, width, depth, sweep) {
+    let totalVolume = livingVolume(height, width, depth) + roofVolume(depth, sweep, width);
     return totalVolume;
 }
-//Function input_output calls every functions and displays the result for the hose volume.
-function input_output() {
-
+/**
+ * @return {number} returns the volume of the house
+ */
+function inputoutput() {
     let width = parseFloat(prompt("Please enter width: "));
     let height = parseFloat(prompt("Please enter height: "));
     let depth = parseFloat(prompt("Please enter depth: "));
     let sweep = parseFloat(prompt("Please enter sweep: "));
 
-    let volume = house_Volume(height, width, depth, sweep);
+    let volume = houseVolume(height, width, depth, sweep);
     //print the house volume
     console.log("The volume of the house is: " + volume);
 
 }
 //call the function
-input_output();
+inputoutput();

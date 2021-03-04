@@ -36,5 +36,5 @@ function minThree(a, b, c) {
     }
 }
 
-console.log(minThree(33, 55, 76))
+console.log(minThree(33, 55, 76));
 console.log(minThree(-1, 0, 4));

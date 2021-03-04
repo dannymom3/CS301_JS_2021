@@ -2,18 +2,22 @@
 
 const prompt = require("prompt-sync")();
 
-let radius = +prompt("Enter radius of a circle: ");
-let height = +prompt("Enter height of cylinder: ");
+let radius = parseInt(prompt("Enter radius of a circle: "));
+let height = parseInt(prompt("Enter height of cylinder: "));
 let area;
-
+/**
+ * @return {number} area returns area of the circle
+ */
 function circleArea() {
-    area = (Math.PI * Math.pow(radius, 2));
+    area = parseInt(Math.PI * Math.pow(radius, 2));
     return area;
 }
-
+/**
+ * @return {number} volume returns volume of cylinder
+ */
 function cylinderVolume() {
-    let volume = (circleArea() * height);
+    let volume = parseInt(circleArea() * height);
     return volume;
 }
-
-console.log(`The volume of cylinder is ${cylinderVolume()}`)
+module.exports = { circleArea, cylinderVolume };
+console.log(`The volume of cylinder is ${cylinderVolume()}`);

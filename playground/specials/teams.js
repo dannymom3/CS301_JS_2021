@@ -15,5 +15,5 @@ if (extra === 0) {
     console.log(`${standardTeamSize} of teams ${initialSize}`);
 } else {
     console.log(`${extra} teams of ${initialSize + 1} 
-    and ${standardTeamSize} of teams ${initialSize}`)
+    and ${standardTeamSize} of teams ${initialSize}`);
 }
