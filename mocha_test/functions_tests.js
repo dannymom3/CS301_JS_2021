@@ -8,4 +8,5 @@ describe("checkPrime", function() {
     it(" 77 is not prime", function() {
         assert.strictEqual(my_functions.checkPrime(77), false);
     });
+
 });
