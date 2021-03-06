@@ -30,3 +30,5 @@ console.log(answer);
 let userArray2 = [1, 2, 2, 1]; //Even elements
 let answer2 = isPalindrome(userArray2);
 console.log(answer2);
+
+module.exports = { isPalindrome };

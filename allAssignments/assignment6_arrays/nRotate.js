@@ -28,3 +28,5 @@ let userArray = [1, 2, 3, 4, 5];
 
 let answer = nRotate(userArray, 4);
 console.log(answer);
+
+module.exports = { nRotate };

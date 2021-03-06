@@ -11,7 +11,7 @@ let myArray = [100, 2, 3, 5, 100];
  * @param {array} arr array elements from the user
  * @return {arrays} returns the sum of first and last elements of the array 
  */
-function addend(arr) {
+function addends(arr) {
     let newArr = [];
     for (let i = 0; i < arr.length; i++) {
         newArr = arr[0] + arr[arr.length - 1];
@@ -20,5 +20,7 @@ function addend(arr) {
     return newArr;
 
 }
-let answer = addend(myArray);
+let answer = addends(myArray);
 console.log(answer);
+
+module.exports = { addends };

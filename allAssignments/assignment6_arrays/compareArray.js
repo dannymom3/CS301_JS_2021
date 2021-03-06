@@ -36,3 +36,5 @@ let answer2 = isArrayEqual(arr3, arr4);
 console.log(answer2);
 
 //console.log(typeof arr1); //object
+
+module.exports = { isArrayEqual };

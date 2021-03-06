@@ -22,3 +22,5 @@ function rotateLeft(arr) {
 let temp = [1, 2, 3, 4, 5];
 let answer = rotateLeft(temp);
 console.log(answer);
+
+module.exports = { rotateLeft };

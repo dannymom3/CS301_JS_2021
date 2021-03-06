@@ -29,3 +29,5 @@ function filterNegative(arr) {
 let userArray = [1, -2, 3, -4, 5, -6];
 let result = filterNegative(userArray);
 console.log(result);
+
+module.exports = { filterNegative };

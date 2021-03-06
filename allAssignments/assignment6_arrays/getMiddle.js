@@ -26,6 +26,8 @@ console.log(answerOdd);
 let answerEven = getMiddle(arr2);
 console.log(answerEven);
 
+module.exports = { getMiddle };
+
 // function getMiddleElement(arr) {
 //     let middleIndex;
 //     for (let i = 0; i < arr.length; i++) { // we can avoid the for loop, it works with if statement

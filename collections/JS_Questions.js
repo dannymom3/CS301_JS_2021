@@ -1822,3 +1822,15 @@ function filterRange(arr) {
 
 filterRange([6, 4, 3, 7, 5, 8]) // [6,4,3,7,5,8]
     // [3,4,5,6,7,8]
+
+
+//83. check the leap year
+function test_LeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
+        return year;
+    } else {
+        return false;
+    }
+}
+
+console.log(leap_year_range(2000, 2012));

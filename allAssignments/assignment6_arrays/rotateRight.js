@@ -24,3 +24,5 @@ let userArray = [1, 2, 3, 4, 5];
 
 let answer = rotateRight(userArray);
 console.log(answer);
+
+module.exports = { rotateRight };
