@@ -3,27 +3,35 @@
 An evenDominated array is an array that has count of even elements in the array more than the odd elements. 
 Write a function that tests if an array is evendominated.
 ----------------------------------------------------------------------------------------------------------
-*
- 
+*/
+
 /**
  * 
  * @param {Array} arr an array inputed by the user
- * @return {number} returns a number counts the dominated even elements 
+ * @return {boolean} returns true if even dominated otherwise return false
+ * if odd is more than even elements of the array
  */
-function evenDominanted(arr) {
+function isEvenDominanted(arr) {
 
-    //TODO
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 === 0 > arr[i] % 2 !== 0) {
-            console.log("Even count is dominated")
+    let evenCount = 0;
+    let oddCount = 0;
+
+    for (let num of arr) {
+        if (num % 2 === 0) {
+            evenCount++;
         } else {
-            console.log("Odd count is dominated")
+            oddCount++;
         }
     }
+    return evenCount > oddCount;
 
 }
-//TODO
 
-let arr2 = [1, 2, 3, 4, 5, 6, 8, 10, 20];
 
-evenDominanted(arr2);
+// let arr2 = [1, 3, 3, 3, 3, 3, 3];
+
+// let answer = isEvenDominanted(arr2);
+// console.log(answer);
+
+let result = isEvenDominanted([-1, 2, 3, 3, 4, 4, 4, 4, 4]);
+if (result) console.log("It's even dominated");

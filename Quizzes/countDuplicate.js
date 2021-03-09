@@ -3,19 +3,23 @@
 Write a functionto count total number of duplicate elements in an array.
 */
 
-
-function countDuplicateElements(arr) {
-    let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] === arr[j])
-                count++;
+/**
+ * 
+ * @param {Array} arr user input Array
+ * @return {number} returns number of duplicate elements
+ */
+function countDuplicate(arr) {
+    let duplicateCount = 0;
+    arr.sort();
+    for (let i = 0; i < arr.length - 1; i++) { //arr.length - 1 ==> prevents to out range the array
+        if (arr[i] === arr[i + 1]) {
+            duplicateCount++;
         }
     }
-    return count;
+    return duplicateCount;
 }
 
 let arr2 = [1, 2, 3, 4, 5, 6, 6, 9, 8, 8, 8];
 arr2.sort();
-let answer = countDuplicateElements(arr2);
+let answer = countDuplicate(arr2);
 console.log(answer);
