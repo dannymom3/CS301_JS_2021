@@ -15,30 +15,29 @@ Make use of shift and push array methods.
  */
 function mergeArrays(arr1, arr2) {
 
-    let newArray = [];
+    let merged = [];
+    while (arr1.length > 0 && arr2.length > 0) {
+        let smaller = arr1[0] < arr2[0] ? arr1 : arr2;
+        merged.push(smaller.shift());
+    }
 
-    // while (arr1.length && arr2.length) {
-    //     if (arr1[0] < arr2[0]) {
-    //         newArray.push(arr1.shift());
-    //     } else {
-    //         newArray.push(arr2.shift());
-    //     }
-    // }
-    //for (let i = 0; i < arr1.length; i++) {
-    while (arr1.length && arr2.length) {
-        if (arr1[0] < arr2[0]) {
-            newArray.push(arr1.shift());
-            if (arr2[0] < arr1[0]) {
-                newArray.push(arr2.shift());
-            }
+    if (arr1.length > 0) {
+        // OR merged.concat(arr1); -->instead of looping through
+        for (let i = 0; i < arr1.length; i++) {
+            merged.push(arr1[i]);
+        }
+    } else if (arr2.length > 0) {
+        //OR merged.concat(arr2);
+        for (let i = 0; i < arr2.length; i++) {
+            merged.push(arr2[i]);
         }
     }
-    return newArray;
+    return merged;
 }
 
 
-let firstArr = [1, 2, 3, 4, 5];
-let secondArr = [6, 7, 8, 9, 10];
+let firstArr = [1, 2, 3, 100, 4, 5];
+let secondArr = [6, 7, 8, 9, 10, 11];
 
 let Answer = mergeArrays(firstArr, secondArr);
 console.log(Answer);

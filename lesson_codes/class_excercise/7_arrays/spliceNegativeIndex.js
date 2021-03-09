@@ -7,3 +7,9 @@ let arr = [1, 2, 5];
 
 arr.splice(-1, 0, 3, 4, "danny"); //negative index
 console.log(arr);
+
+
+let arr1 = ["I", "go", "home"];
+
+console.log(arr1.splice(1)); // ["go", "home"]
+console.log(arr1); // ["I"]

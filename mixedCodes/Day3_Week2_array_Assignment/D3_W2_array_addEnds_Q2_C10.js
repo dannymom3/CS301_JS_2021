@@ -1,9 +1,13 @@
 "use strict";
 
 //Write a function that return the sum of the first and last value in an array.
-function addEnds(list) {
-    let sum = list[0] + list[list.length - 1];
+function addEnds(arr) {
+    let sum = 0;
+    //let sum = arr[0] + arr[arr.length - 1];
+    for (let i = 0; i < arr.length; i++) {
+        sum = (arr[0] + (arr[arr.length - 1]));
+    }
     return sum;
 }
-
+let list = [1, 2, 3, 4, 5, 6, 100];
 console.log(addEnds(list));

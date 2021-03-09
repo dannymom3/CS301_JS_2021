@@ -1,3 +1,4 @@
+"use strict";
 /**
  The sum factor of an array is defined to be the number of times that 
  the sum of the array appears as an element of the array. 
@@ -7,12 +8,18 @@
  and 10 does not occur as an element of the array. The sum factor of the empty array [] 
 is defined to be 0.
 Write a function named sumFactor that returns the sum factor of its array argument.
+---------------------------------------------------------------------------------
  */
-
+/**
+ * 
+ * @param {Array} arr user inputed array
+ * @return {number} returns count of the array element
+ */
 function sumFactor(arr) {
     let sum = 0;
     let count = 0;
-    if (arr.length === 0) return count;
+    if (arr.length === 0)
+        return count;
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
@@ -24,4 +31,4 @@ function sumFactor(arr) {
     return count;
 }
 let value = [1, -1, 1, -1, 1, -1, 1];
-console.log(sumFactor(value)) //4
+console.log(sumFactor(value)); //4

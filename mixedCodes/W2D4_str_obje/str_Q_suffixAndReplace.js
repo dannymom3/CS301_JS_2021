@@ -6,15 +6,15 @@ let str = "Thanks for joining us.";
  str = str.replace("for", "4");
  */
 let arr = str.split(" ");
-for(let i=0; i<arr.length; i++){
-    if(arr[i] === "for"){
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "for") {
         arr[i] = "4";
     }
 }
 
 str = arr.join(" ");
 
-console.log(str)
+console.log(str);
 
 
 "use-strict";
@@ -46,5 +46,3 @@ function reverse(str) {
     }
     return reversed
 }
-
-

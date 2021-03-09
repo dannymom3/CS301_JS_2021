@@ -25,8 +25,6 @@ function sumOddIndicesValue(arr) {
     }
     return sum;
 }
-
 let myArray = [1, 2, 3, 5, 6, 7]; //expected sum = 2 + 5 + 7 = 14
-
 let answer = sumOddIndicesValue(myArray);
 console.log(answer);

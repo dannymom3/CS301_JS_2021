@@ -5,16 +5,15 @@ Write a function named isSumSafe that returns true if its argument is sum-safe, 
 For example, isSumSafe([5, -5, 0]) should return false and isSumSafe([5, -2, 1]) should return true.
 Return false if the array is empty.
 */
-function isSumSafe(arr){
-if(arr.length === 0) return false;
-    let sum = arr.reduce((a,b) => a+b);
-    
-    for(let i=0; i<arr.length; i++){
-        if(arr[i] === sum)
-        return false;
+function isSumSafe(arr) {
+    if (arr.length === 0) return false;
+    let sum = arr.reduce((a, b) => a + b);
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === sum)
+            return false;
     }
     return true;
 }
-
-let number = [2,3,-4,6,-4];
+let number = [2, 3, 1];
 console.log(isSumSafe(number))

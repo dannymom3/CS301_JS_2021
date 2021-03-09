@@ -10,23 +10,38 @@ passed in the function
  * @param {number} num counter number to be rotated the given array
  * @return {array} returns the rotated array by num times
  */
-function nRotate(arr, num) {
+function rotateLeft(arr) {
 
-    let temp = arr[0];
+    let first = arr[0];
 
-    for (let i = 0; i < num; i++) {
+    for (let i = 0; i < arr.length; i++) {
         arr[i] = arr[i + 1];
 
-        arr[num - 1] = temp;
+
     }
+    arr[arr.length - 1] = first;
 
     return arr;
 
 }
 
-let userArray = [1, 2, 3, 4, 5];
+function rotateNLeft(arr, num) {
+    let nRotate = arr;
+    for (let i = 0; i <= num; i++) {
+        nRotate = rotateLeft(arr);
+    }
+    return nRotate;
+}
 
-let answer = nRotate(userArray, 4);
+let userArray = [1, 2, 3, 4];
+
+let answer = rotateNLeft(userArray, 2);
 console.log(answer);
 
-module.exports = { nRotate };
+//module.exports = { rotateNLeft };
+
+
+// let userArray = [1, 2, 3, 4];
+
+// let answer = rotateLeft(userArray, 2);
+// console.log(answer);
