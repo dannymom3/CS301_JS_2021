@@ -82,12 +82,25 @@
 // let arr1 = [1, 2, 3, 0, null, false, undefined, ""]; // "" is falsy, while " " is truthy
 // console.log(countFalsy(arr1));
 
-let user = {
-    myId: 123,
-    name: "danny",
-};
-user.name = "haile";
-user.myId = 1111;
-console.log(user.myId);
+// let user = {
+//     myId: 123,
+//     name: "danny",
+// };
+// user.name = "haile";
+// user.myId = 1111;
+// console.log(user.myId);
 
-console.log(user.name);
+// console.log(user.name);
+let arr = [1, 2, 3];
+//console.log(arr);
+swap2(arr, 1, 2); //swap2(arr, 0, 2);
+console.log(arr);
+
+
+function swap2(arr, i, j) {
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+
+    return arr;
+}
