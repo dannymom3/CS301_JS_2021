@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>My business Ads</title>
+    <title>My simple calculator</title>
     <style>
         * {
             padding: 0;
@@ -61,13 +61,13 @@
         }
     </style>
     <script>
-        function showresult(choise) {
-            let num1 = parsefloat(document.getElementById('input1').value);
-            let num2 = parsefloat(document.getElementById('input2').value);
+        function myCalculator(myCalc) {
+            let num1 = parsefloat(document.getElementById("input1").value);
+            let num2 = parsefloat(document.getElementById("input2").value);
             let result;
-            let choise;
+            let calc = myCalc;
 
-            switch (choise) {
+            switch (calc) {
                 case '1':
                     result = num1 + num2;
                     break;
@@ -79,11 +79,8 @@
                     break;
                 default:
                     break;
-
             }
-            document.getElementById('showresult').innerHTML = result;
-
-
+            document.getElementById("output").innerHTML = result;
 
         }
     </script>
@@ -98,18 +95,20 @@
         <hr> First value:
         <br>
         <input type="text" size="37" id="input1" /></br>
-
         Second value:
         <br>
         <input type="text" size="37" id="input2" /></br>
 
-        <button type="button" onclick="getInfo()">operations:</button><br>
-        <button onclick="showresult('1')">+</button>
-        <button onclick="showresult('2')">-</button>
-        <button onclick="showresult('3')">*</button>
-        <br>Result:
+        <!-- <input type="button" value="operations:" onclick="myCalculator()"><br> -->
+        Operations <br>
+        <button onclick="myCalculator('1')">+</button>
+        <button onclick="myCalculator('2')">-</button>
+        <button onclick="myCalculator('3')">*</button>
+        <br> Result:
+        <br>
+        <input type="text" size="37" id="output" />
+        <!-- <span id="output">Result:</span> -->
 
-        <div id="outputDiv"></div>
     </div>
     <p><strong><a href="index.html"> BACK TO HOME</a></strong></p>
 
