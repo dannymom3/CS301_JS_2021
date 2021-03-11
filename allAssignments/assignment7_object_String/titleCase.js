@@ -16,4 +16,4 @@ function titleCase1(str) {
     return arr.join(" ");
 }
 //E.g. expected output is //DANIEL
-console.log(titleCase1("dANIEL"));
+console.log(titleCase1("daniel haile alemu")); //Daniel Haile Alemu

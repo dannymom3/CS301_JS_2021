@@ -1,8 +1,9 @@
 "use strict";
 
-let car = {};
-car.make = "Toyota";
-car.model = "Camry";
+let car = {
+    make: "Toyota",
+    model: "Camry",
+};
 console.log(car);
 
 car.model = "RAV4";

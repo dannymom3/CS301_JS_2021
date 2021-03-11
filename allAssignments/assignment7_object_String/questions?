@@ -1,6 +1,8 @@
 
 Q1. How can you make a copy of an object?
-    answer: objects are stored and copied by "reference"
+    answer: cloning, object assigning, looping every properties and copy them
+Object.assign();
+refere --> refere object copy 
 
 Q2. How do you remove the white spaces that may be at the beginning and ending of a string
 value?

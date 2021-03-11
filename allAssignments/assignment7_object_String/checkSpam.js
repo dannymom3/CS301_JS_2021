@@ -11,7 +11,7 @@ otherwise return false.
  * returns false
  */
 function checkSpam(str) {
-
+    //includes
     if (str !== "lottery" && str !== "prize") {
         return false;
     } else {
