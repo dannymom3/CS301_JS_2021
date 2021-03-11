@@ -62,8 +62,8 @@
     </style>
     <script>
         function myCalculator(myCalc) {
-            let num1 = parsefloat(document.getElementById("input1").value);
-            let num2 = parsefloat(document.getElementById("input2").value);
+            let num1 = parseFloat(document.getElementById('input1').value);
+            let num2 = parseFloat(document.getElementById('input2').value);
             let result;
             let calc = myCalc;
 
@@ -80,8 +80,8 @@
                 default:
                     break;
             }
-            document.getElementById("output").innerHTML = result;
-
+            // document.getElementById('output').innerHTML = result;
+            document.getElementById('output').value = result;
         }
     </script>
 </head>
@@ -111,10 +111,7 @@
 
     </div>
     <p><strong><a href="index.html"> BACK TO HOME</a></strong></p>
-
     <p><strong><a href=""> Valid!!!</a></strong></p>
-
-
 </body>
 
 </html>
