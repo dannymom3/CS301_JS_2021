@@ -6,15 +6,12 @@
  * @return {string} a reversed word or a reversed phrase
  */
 function reverse(str) {
-    let arr = str.split("");
-    let j = 0;
-    let reverseArr = [];
-    for (let i = arr.length - 1; i >= 0; i--) {
-        reverseArr[j] = arr[i];
-        j++;
+    let reversed = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
     }
-    return reverseArr.join("");
+    return reversed;
 }
-let myArr = ["daniel"];
+let myArr = "daniel";
 let answer = reverse(myArr);
 console.log(answer);

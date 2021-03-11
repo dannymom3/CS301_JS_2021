@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My business Ads</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        li,
+        ul {
+            margin-left: 15px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        body {
+            background-color: lightcyan;
+        }
+        
+        h1 {
+            color: blue;
+        }
+        
+        h2 {
+            color: blue;
+        }
+        
+        h3 {
+            color: #0000aa;
+            margin-bottom: 5px;
+        }
+        
+        p,
+        hr,
+        blockquote {
+            margin-bottom: 20px;
+        }
+        
+        img {
+            float: right;
+            /*The image is located to the right side of the body*/
+            border: 3px yellow solid;
+            padding: 2px;
+            margin: 0 0 0 30px;
+            background: red;
+        }
+        
+        div#wrapper {
+            width: 940px;
+            margin: 30px auto;
+            /* short cut for - 30px for top and bottom as well as auto for right and left */
+            /* to center a box, or a block level element, use margin 0 auto*/
+            border: 1px solid #ddd;
+            /* border for my portal page*/
+            padding: 20px;
+            background-color: greenyellow;
+        }
+    </style>
+    <script>
+        function getStudentInfo() {
+
+            let name = document.getElementById('nameInputBox').value;
+            let street = document.getElementById('IdInputBox').value;
+            let city = document.getElementById('cityInputBox').value;
+            let state = document.getElementById('stateInputBox').value;
+            let zipCode = document.getElementById('zipCodeInputBox').value;
+            let customerInfo = `${name} <br> ${street} <br> ${city} <br> ${state} ${', '} ${zipCode}`;
+            document.getElementById('outputDiv').innerHTML = customerInfo;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Daniel Gift Shop! </h1>
+        <h2>We have a special gifts in store for you!!</h2>
+        <hr>
+        <p>Gift is an object which is given freely with out expecting anything to the nearest and dearest on particular occasion as a token of expressing their gratutude, love and friendship, gifts will be remembered for long time or life time.
+        </p>
+        <h2>Our available gifts in store</h2>
+        <hr>
+        <img src="images/new.jpg" alt="picture of giftshop">
+        <ul>
+            <li> quarantin gifts</li>
+            <li> Mother's gift</li>
+            <li> christmas gift</li>
+            <li> Gift cards</li>
+            <li> gifts for couples</li>
+            <li> And a lot more....</li>
+        </ul>
+        <p>we're glad to see you in our beloved store, and please come again!</p>
+        <h3>For more information or online shoping, please provide your address below...</h3>
+        Name <input type="text" id="nameInputBox" /></br>
+        Street <input type="text" id="IdInputBox" /></br>
+        City <input type="text" id="cityInputBox" /> State <input type="text" id="stateInputBox" /> Zip Code <input type="text" id="zipCodeInputBox" /></br>
+
+        <button type="button" onclick="getStudentInfo()">your adress info</button>
+        <div id="outputDiv"></div>
+    </div>
+    <p><strong><a href="index.html"> BACK TO HOME</a></strong></p>
+
+    <p><strong><a href=""> Valid!!!</a></strong></p>
+
+
+</body>
+
+</html>
